@@ -673,7 +673,7 @@ static int pmw3610_report_data(const struct device *dev) {
 
 #ifdef CONFIG_PMW3610_POLLING_RATE_125_SW
     int64_t curr_time = k_uptime_get();
-    if (data->last_poll_time == 0 || curr_time - data->last_poll_time > 128) {
+    if (data->last_poll_time == 0 || curr_time - data->last_poll_time > 16) {
         data->last_poll_time = curr_time;
         data->last_x = x;
         data->last_y = y;
