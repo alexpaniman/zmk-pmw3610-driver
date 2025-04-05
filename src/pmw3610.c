@@ -648,7 +648,7 @@ static int pmw3610_report_data(const struct device *dev) {
     }
 
     // if (IS_ENABLED(CONFIG_PMW3610_INVERT_X)) {
-    //    x = -x;
+        x = -x;
     // }
 
     // if (IS_ENABLED(CONFIG_PMW3610_INVERT_Y)) {
